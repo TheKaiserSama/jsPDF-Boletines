@@ -1,0 +1,22 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+
+.mayusculas {
+    text-transform: uppercase;
+}
+
+.center-xy {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.resaltar {
+    background-color: #4F81BD;
+}

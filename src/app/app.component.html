@@ -1,0 +1,47 @@
+<iframe
+  id="inlineFrameExample"
+  title="Inline Frame Example"
+  width="1200"
+  height="1000"
+  [src]="pathIframe | safe:'resourceUrl'">
+</iframe>
+
+<table id="table-example" style="width: 800px" #tableExample>
+  <thead class="mayusculas">
+    <tr>
+      <th rowspan="2" class="center-xy">Nº</th>
+      <th rowspan="2" class="center-xy">Valoración formativa</th>
+      <th colspan="3" class="center-xy resaltar">Valoración cualitativa</th>
+    </tr>
+    <tr>
+      <th class="center-xy">Nunca</th>
+      <th class="center-xy">A veces</th>
+      <th class="center-xy">Siempre</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td class="center-xy">01</td>
+      <td>Puntualidad en la entrega de actividades.</td>
+      <td class="center-xy"></td>
+      <td class="center-xy mayusculas">x</td>
+      <td class="center-xy"></td>
+    </tr>
+  
+    <tr>
+      <td class="center-xy">02</td>
+      <td>Actitud del estudiante para el trabajo académico no presencial.
+      </td>
+      <td class="center-xy"></td>
+      <td class="center-xy mayusculas">x</td>
+      <td class="center-xy"></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<hr>
+<button (click)="previewPDF()">Visualizar PDF</button>
+<hr>
+<!-- <button (click)="createPDF()">Descargar PDF</button> -->
